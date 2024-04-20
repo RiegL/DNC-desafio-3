@@ -1,0 +1,17 @@
+.presentation{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.presentation h1{
+    font-size:45px ;
+}
+
+.presentation h4{
+    font-size: 20px;
+}
+
+.presentation p {
+    color: #BCBCBC;
+}
