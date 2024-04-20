@@ -5,7 +5,7 @@
 }
 
 .presentation h1{
-    font-size:45px ;
+    font-size:35px ;
 }
 
 .presentation h4{
@@ -14,4 +14,9 @@
 
 .presentation p {
     color: #BCBCBC;
+    margin-left: 35px;
+}
+
+.button{
+    margin-left: 60px;
 }

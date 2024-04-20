@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import sx from "./Presentation.module.css";
-import Button from '../elements/Button';
+import Button from "../elements/Button";
 
 function Presentation() {
   const [text, setText] = useState("");
@@ -21,7 +21,9 @@ function Presentation() {
         setText((prevText) => prevText.substring(0, prevText.length - 1));
         if (text === "") {
           setTypingDirection("typing");
-          setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+          setCurrentPhraseIndex(
+            (prevIndex) => (prevIndex + 1) % phrases.length
+          );
           clearInterval(interval);
         }
       }
@@ -37,13 +39,24 @@ function Presentation() {
       </h4>
       <h1>Olá, {text}</h1>
       <p>
-        Estou empenhado em progredir na minha jornada profissional por meio de<br/>
-        estudos diários e desafios constantes. Com experiência em front-end,<br/>
-        estou determinado a me tornar um desenvolvedor full-stack. Apaixonado<br/>
-        por tecnologia, estou sempre pronto para aprender e evoluir. Meu<br/>
-        objetivo é contribuir com soluções inovadoras em projetos de destaque.<br/>
+        Estou empenhado em progredir na minha jornada profissional por meio de
+        <br />
+        estudos diários e desafios constantes. Com experiência em front-end,
+        <br />
+        estou determinado a me tornar um desenvolvedor full-stack. Apaixonado
+        <br />
+        por tecnologia, estou sempre pronto para aprender e evoluir. Meu
+        <br />
+        objetivo é contribuir com soluções inovadoras em projetos de destaque.
+        <br />
       </p>
-      <Button link="https://github.com/RiegL" text="Saber Mais" />
+      <div className={sx.button}>
+        <Button
+          
+          link="https://github.com/RiegL"
+          text="Saber Mais"
+        />
+      </div>
     </div>
   );
 }
