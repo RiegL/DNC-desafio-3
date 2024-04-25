@@ -1,4 +1,5 @@
 import sx from "./Aboutme.module.css";
+
 function Aboutme() {
   return (
     <div className={sx.aboutme}>
